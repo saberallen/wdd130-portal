@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgb(120, 96, 64);
+            font-family: Georgia, serif;
+            padding: 8px 12px;
+        }
+
+        #formContainer {
+            width: 420px;
+            max-width: 100%;
+            margin: 0 auto;
+            background: white;
+            border: 10px solid #1645a3;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        /* Top Banner */
+
+        #banner {
+            height: 200px;
+            background-image: url("images/jesus_feeds_5000.jpeg");
+            background-size: cover;
+            background-position: center 40%;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #closeBtn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 2px 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #bannerText {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        #bannerText h1 {
+            font-size: 36px;
+        }
+
+        #bannerText h2 {
+            font-size: 28px;
+        }
+
+        /* Form Section */
+
+        h3 {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 170px;
+            column-gap: 20px;
+            row-gap: 20px;
+            padding: 0 19px 20px;
+            align-items: center;
+        }
+
+        form > label {
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 170px;
+            max-width: 100%;
+            height: 22px;
+        }
+
+        .genderOptions {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+
+        form section {
+            grid-column: 1 / 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+        }
+
+        form section label {
+            font-size: 16px;
+        }
+
+        form section button {
+            padding: 2px 9px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        /* Scripture Categories */
+
+        #scriptureImages {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 3px;
+            height: 100px;
+            background: white;
+        }
+
+        #scriptureImages img {
+            display: block;
+            width: 100%;
+            height: 100px;
+            object-fit: contain;
+            background: #171717;
+        }
+
+        /* Form Output */
+
+        #output {
+            max-width: 420px;
+            margin: 20px auto;
+            color: white;
+        }
+
+        #output h3 {
+            color: white;
+        }
+
+        #output li {
+            margin: 8px 0;
+        }
+
+        /* Mobile Layout */
+
+        @media screen and (max-width: 400px) {
+            form {
+                grid-template-columns: 1fr 150px;
+                column-gap: 10px;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"] {
+                width: 150px;
+            }
+
+            #bannerText h1 {
+                font-size: 30px;
+            }
+
+            #bannerText h2 {
+                font-size: 23px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="formContainer">
+
+        <!-- Banner -->
+
+        <div id="banner">
+
+            <button type="button" id="closeBtn">X</button>
+
+            <div id="bannerText">
+                <h1>Daily Feed</h1>
+                <h2>Scripture a Day</h2>
+            </div>
+
+        </div>
+
+        <!-- Form Title -->
+
+        <h3>Sign Up for Daily Scripture Feed</h3>
+
+        <!-- Sign Up Form -->
+
+        <form id="myForm">
+
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Gender:</label>
+
+            <div class="genderOptions">
+
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+
+            </div>
+
+            <section>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </section>
+
+            <section>
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">I acknowledge the terms and conditions</label>
+            </section>
+
+            <section>
+                <button type="submit">Submit</button>
+            </section>
+
+        </form>
+
+        <!-- Scripture Categories -->
+
+        <div id="scriptureImages">
+
+            <img src="images/old_testament.webp" alt="Old Testament">
+
+            <img src="images/new_testament.webp" alt="New Testament">
+
+            <img src="images/book_of_mormon.webp" alt="Book of Mormon">
+
+            <img src="images/doctrine_and_covenants.webp" alt="Doctrine and Covenants">
+
+            <img src="images/pearl_of_great_price.webp" alt="Pearl of Great Price">
+
+        </div>
+
+    </div>
+
+    <!-- Output -->
+
+    <div id="output"></div>
+
+    <script>
+
+        // Close Button
+
+        document.getElementById("closeBtn").addEventListener("click", function () {
+
+            document.getElementById("formContainer").style.display = "none";
+
+        });
+
+
+        // Form Submission
+
+        const form = document.getElementById("myForm");
+        const output = document.getElementById("output");
+
+        form.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+
+                if (key === "password") {
+                    entries.push([key, "[password entered]"]);
+                } else {
+                    entries.push([key, value]);
+                }
+
+            }
+
+            output.innerHTML = `
+                <br>
+                <h3>Here is the data that would be sent to the server:</h3>
+                <ul id="resultList"></ul>
+            `;
+
+            const resultList = document.getElementById("resultList");
+
+            entries.forEach(function (entry) {
+
+                const li = document.createElement("li");
+                const strong = document.createElement("strong");
+
+                strong.textContent = entry[0];
+
+                li.appendChild(strong);
+                li.appendChild(document.createTextNode(": " + entry[1]));
+
+                resultList.appendChild(li);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

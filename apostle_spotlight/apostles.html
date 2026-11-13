@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostle Spotlight</title>
+
+    <style>
+        body {
+            background-color: #e8eded;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px 10px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 10px 20px 35px;
+            border: 6px solid black;
+            border-radius: 35px;
+            text-align: center;
+            color: white;
+            background-color: #06366b;
+            background-image: url("images/christus.webp");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: normal;
+            margin: 0 0 15px;
+        }
+
+        h2 {
+            font-size: 21px;
+            font-weight: normal;
+            margin: 10px 0 15px;
+        }
+
+        .first-presidency {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+            margin-bottom: 12px;
+        }
+
+        .first-presidency img {
+            width: 105px;
+            height: 105px;
+        }
+
+        .apostles {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            gap: 25px 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .apostle img {
+            width: 75px;
+            height: 75px;
+        }
+
+        .first-presidency img,
+        .apostle img {
+            object-fit: cover;
+            border: 6px solid white;
+            border-radius: 50%;
+            transition: border-color 0.3s ease;
+        }
+
+        .first-presidency img:hover,
+        .apostle img:hover {
+            border-color: #00ffff;
+        }
+
+        @media screen and (max-width: 500px) {
+            .container {
+                padding: 15px 10px 25px;
+            }
+
+            .first-presidency {
+                gap: 10px;
+            }
+
+            .first-presidency img {
+                width: 75px;
+                height: 75px;
+            }
+
+            .apostles {
+                gap: 15px 5px;
+            }
+
+            .apostle img {
+                width: 55px;
+                height: 55px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>First Presidency</h1>
+
+        <section class="first-presidency">
+            <img src="images/eyring.webp"
+                 alt="Henry B. Eyring, First Counselor">
+
+            <img src="images/oaks.webp"
+                 alt="Dallin H. Oaks, President of the Church">
+
+            <img src="images/christofferson.webp"
+                 alt="D. Todd Christofferson, Second Counselor">
+        </section>
+
+        <h2>Quorum of the Twelve Apostles</h2>
+
+        <section class="apostles">
+
+            <div class="apostle">
+                <img src="images/uchtdorf.webp"
+                     alt="Dieter F. Uchtdorf">
+            </div>
+
+            <div class="apostle">
+                <img src="images/bednar.webp"
+                     alt="David A. Bednar">
+            </div>
+
+            <div class="apostle">
+                <img src="images/cook.webp"
+                     alt="Quentin L. Cook">
+            </div>
+
+            <div class="apostle">
+                <img src="images/anderson.webp"
+                     alt="Neil L. Anderson">
+            </div>
+
+            <div class="apostle">
+                <img src="images/rasband.webp"
+                     alt="Ronald A. Rasband">
+            </div>
+
+            <div class="apostle">
+                <img src="images/stevenson.webp"
+                     alt="Gary E. Stevenson">
+            </div>
+
+            <div class="apostle">
+                <img src="images/renlund.webp"
+                     alt="Dale G. Renlund">
+            </div>
+
+            <div class="apostle">
+                <img src="images/gong.webp"
+                     alt="Gerrit W. Gong">
+            </div>
+
+            <div class="apostle">
+                <img src="images/soares.webp"
+                     alt="Ulisses Soares">
+            </div>
+
+            <div class="apostle">
+                <img src="images/kearon.webp"
+                     alt="Patrick Kearon">
+            </div>
+
+            <div class="apostle">
+                <img src="images/causse.webp"
+                     alt="Gérald Caussé">
+            </div>
+
+            <div class="apostle">
+                <img src="images/gilbert.webp"
+                     alt="Clark G. Gilbert">
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

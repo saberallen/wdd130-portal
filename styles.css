@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FFFFFF;
+    color: #001219;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #001219;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #94D2BD;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: #0A9396;
+}
+
+h3 {
+    color: #005F73;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    color: #0A9396;
+}
+
+a:hover {
+    color: #005F73;
+}
+
+/* IMAGE */
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+
+caption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #005F73;
+}
+
+th {
+    background-color: #001219;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #94D2BD;
+}
+
+tr:nth-child(even) {
+    background-color: #E9D8A6;
+}
+
+tr:hover {
+    background-color: #94D2BD;
+}
+
+/* CONTACT FORM */
+form {
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #94D2BD;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #0A9396;
+}
+
+/* BUTTON */
+button {
+    background-color: #0A9396;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005F73;
+}
+
+/* FOOTER */
+footer {
+    background-color: #001219;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

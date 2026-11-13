@@ -1,0 +1,148 @@
+/* Add your CSS here to style your halloween page */
+
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #17121f;
+    color: #f5eee6;
+    line-height: 1.6;
+}
+
+/* Main wrapper */
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #241b2e;
+    min-height: 100vh;
+}
+
+/* Header and navigation */
+header {
+    background-color: #100d15;
+    padding: 15px 20px;
+    border-bottom: 4px solid #f58220;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav li {
+    color: #ffffff;
+    background-color: #572477;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav li:hover {
+    background-color: #f58220;
+    color: #17121f;
+}
+
+/* Main content */
+main {
+    padding: 30px;
+}
+
+/* Main heading */
+h1 {
+    color: #ff922b;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 0 #572477;
+    margin: 10px 0 25px;
+}
+
+/* Halloween image */
+main img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto 35px;
+    border: 4px solid #f58220;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Content sections */
+section {
+    background-color: #32243f;
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-left: 5px solid #f58220;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #ff922b;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #754599;
+    padding-bottom: 8px;
+}
+
+p {
+    font-size: 1.05rem;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #100d15;
+    color: #ff922b;
+    padding: 20px;
+    border-top: 4px solid #572477;
+    font-weight: bold;
+}
+
+/* Mobile-friendly layout */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav li {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
